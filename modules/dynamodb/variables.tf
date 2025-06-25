@@ -1,17 +1,17 @@
 variable "table_name" {
-  type = string
+  type        = string
   description = "the name of the dynamo table"
 }
 variable "hash_key" {
-  type = string
+  type        = string
   description = "the paritition key name"
 }
 variable "environment" {
-  type = string
+  type    = string
   default = "dev71"
 }
 variable "purpose" {
-  type = string
+  type    = string
   default = "terraform-state-lock71"
 }
  
