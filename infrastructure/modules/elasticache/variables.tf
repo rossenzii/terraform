@@ -1,8 +1,12 @@
 variable "name" {
   description = "ElastiCache cluster name"
   type        = string
+  default     = "team1-cluster"
 }
-
+variable "vpc_id" {
+  description = "VPC ID for security group"
+  type        = string
+}
 variable "subnet_ids" {
   description = "List of subnet IDs for subnet group"
   type        = list(string)
