@@ -14,7 +14,6 @@ module "elasticache" {
 }
 
 # 2. RDS
-
 module "rds" {
   source           = "./modules/rds"
   vpc_id           = var.vpc_id
