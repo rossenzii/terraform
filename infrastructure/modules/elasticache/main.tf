@@ -34,6 +34,5 @@ resource "aws_elasticache_cluster" "this" {
   port                 = var.port
   subnet_group_name    = aws_elasticache_subnet_group.this.name
   security_group_ids   = var.security_group_ids
-  auth_token           = var.redis_password
   transit_encryption_enabled = true
 }

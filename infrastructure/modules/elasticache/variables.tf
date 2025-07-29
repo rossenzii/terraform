@@ -46,8 +46,3 @@ variable "parameter_group_name" {
   type        = string
   default     = "default.redis7"
 }
-variable "redis_password" {
-  description = "Password for Redis (auth_token)"
-  type        = string
-  sensitive   = true
-}
